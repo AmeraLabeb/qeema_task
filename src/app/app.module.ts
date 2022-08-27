@@ -7,6 +7,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { StoriesComponent } from './Components/stories/stories.component';
 import { FeedsComponent } from './Components/feeds/feeds.component';
+import { HighlightDirective } from './Directives/highlight.directive';
+import { HighLightDirective } from './Directives/high-light.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FeedsComponent } from './Components/feeds/feeds.component';
     NavbarComponent,
     SidebarComponent,
     StoriesComponent,
-    FeedsComponent
+    FeedsComponent,
+    HighlightDirective,
+    HighLightDirective
   ],
   imports: [
     BrowserModule,

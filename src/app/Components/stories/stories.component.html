@@ -2,13 +2,18 @@
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+            <!-- <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
             <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
+ -->
+
+ <div *ngFor="let item of stories">
+       <a class="nav-link" href="#"><img src={{item.img}} class="rounded-circle" alt={{item.name}} width="85" height="85"><p>{{item.name}}</p></a>
+ </div>
 
 
         </div>

@@ -1,0 +1,45 @@
+.container{
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    height: 90vh !important;
+    margin-top: 5vh !important;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.274);
+}
+li{
+    margin-bottom: 10px ;
+}
+li a {
+    text-decoration: none ;
+}
+.logoImg {
+    background-color: white;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: -2px 3px 12px #000000b3;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.logoImg img {
+       width: 100%
+    }
+
+
+
+.logoName p {
+        padding-top: 57px ;
+        color: #bb00ff;
+        font-weight: bold 
+}
+
+
+.logoName span {
+            text-decoration: underline
+}
+
+.nav-item {
+    svg {
+    color : #bb00ff
+
+}}
+
