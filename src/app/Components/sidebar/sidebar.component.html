@@ -1,34 +1,90 @@
+<section class="sidebarContainer">
+  
 <nav class="navbar bg-light">
-    <div class="container-fluid">
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 rounded-pill " type="search" placeholder="Search" aria-label="Search">
+    <form class="row" role="search">
+        <div class="col-7">
+            <div class="searchComponent">
+              <input class="form-control rounded-pill" type="search" placeholder="Search " aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+         <div class="col-5 row">
+                <div class="col-12 buttons d-flex">
+                      <button class="" type="submit" >
+                        <i class="fa-solid fa-bell"></i>
+                      </button>
+                      <button class="" type="submit" >
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                      </button>
+                </div>
+      </div>
+    </form>
+</nav>
+<div class="row">
+<h4><B class="col-7">Suggetions For You</B>&nbsp;&nbsp;&nbsp;&nbsp;<span class="col-2"> See All</span>  </h4></div>
 
-        <button class="btn btn-outline-success rounded-circle p-lg-2 m-lg-2" type="submit" ><img src="https://img.icons8.com/windows/32/000000/upload-to-cloud.png"/></button> 
-        <button class="btn btn-outline-success rounded-circle p-lg-2 m-lg-2" type="submit" ><img src="https://img.icons8.com/windows/32/000000/upload-to-cloud.png"/></button>       
-      </form>
-    </div>
-  </nav>
-                 <ul class="navbar-nav ms-auto">
-                  <li>
-                    <span><B>Suggetions For You</B></span>  <span>See All </span> 
-                  </li>
-                  <li class="nav-item p-lg-3">
-                    <a class="nav-link active" aria-current="page" href="#">
-                      <span> <img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="50" height="50"></span>
-                      <span> Home</span>
-                      <span> <button type="button" class="btn btn-primary"> Primary</button>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item p-lg-3">
-                    <a class="nav-link" href="#"><span> <img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="50" height="50"></span>
-                      <span> Home</span>
-                      <span> <button type="button" class="btn btn-primary"> Primary</button>
-                      </span></a>
-                  </li>
-                  <li class="nav-item p-lg-3">
-                      <a class="nav-link" href="#"><span> <img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="50" height="50"></span>
-                        <span> Home</span>
-                        <span> <button type="button" class="btn btn-primary"> Primary</button>
-                        </span></a>
-                    </li></ul>
+<ul class="navbar-nav ms-auto">
+    <li class="nav-item" *ngFor="let item of side">
+                        <div class="row follow" >
+                          <div class="col-2 ">
+                                  <img [src]="item.imgs" class="rounded-circle" alt="Cinque Terre">
+                          </div>
+                          <div class="col-4 ">
+                               <p>{{item.names}}</p>
+                               <p>@sara</p>
+                          </div>
+                          <div class="col-6"> 
+                                <button HighLight type="button" class="btn btn-primary"> follow </button>
+                          </div>
+                      </div>
+  
+    </li>
+
+
+    
+  </ul>
+</section>
+
+
+
+<!-- 
+<a class="nav-link row" href="#"><span> 
+  <img [src]="item.imgs" class="rounded-circle col-2 " alt="Cinque Terre"></span>
+  <div class="col-7 ">
+       <p>sdfsdf</p><br>
+       <p>@sara</p>
+  </div>
+  <span> <button HighLight type="button" class="btn btn-primary  col-3"> follow </button>
+  </span>
+</a> -->
+
+
+
+
+<!-- <form class="d-flex row" role="search">
+  <input class="form-control me-2 rounded-pill col-7" type="search" placeholder="Search " aria-label="Search">
+  <button class="btn btn-outline-success rounded-circle p-lg-2 m-lg-2 col-3" type="submit" >
+   asd           
+   </button> 
+    <button class="btn btn-outline-success rounded-circle p-lg-2 m-lg-2 col-2" type="submit" >
+das
+    </button>       
+</form> -->
+
+
+
+
+
+<!-- 
+<div class="col-1">
+</div>
+<div class="col-6 buttons">
+  <button class="btn" type="submit" >
+    <i class="fa-solid fa-bell"></i>
+  </button>
+</div>
+<div class="col-5 buttons">
+  <button class="btn" type="submit" >
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+  </button>
+</div> -->

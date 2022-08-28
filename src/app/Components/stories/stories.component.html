@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -12,8 +12,8 @@
  -->
 
  <div *ngFor="let item of stories">
-       <a class="nav-link" href="#"><img src={{item.img}} class="rounded-circle" alt={{item.name}} width="85" height="85"><p>{{item.name}}</p></a>
- </div>
+       <a class="nav-link" href="#"><img HighLight [defaultColor]="defaultColor" [color]="color" [src]="item.img" class="rounded-circle" alt={{item.name}} width="80" height="80"><p>{{item.name}}</p></a>
+      </div>
 
 
         </div>
