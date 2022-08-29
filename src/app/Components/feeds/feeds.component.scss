@@ -2,14 +2,30 @@
     width: 100% !important;
     height: 100%!important;
     margin-top: 0vh !important;
+    
 }
 .row{
     align-items: center !important;
     width:100%;
+   
+
 
 }
 .col{
     text-align: center !important;
 
     width:50%;
+}
+.gg{
+    font-size: 20px;
+}
+.nav{
+    font-size: 16px;
+}
+h3{
+    font-size: 16px;
+    margin-right: 0%;
+    svg{
+        size: 20%;
+    }
 }
