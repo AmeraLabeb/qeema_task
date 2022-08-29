@@ -1,17 +1,41 @@
-<span> Feeds</span>
-
-<ul class="nav justify-content-center">
+<section class="Feeds">
+<div class="row">
+  <span class="col-2"> Feeds</span>
+  <ul class="nav justify-content-end">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link" #All name="All" aria-current="page" href="#" (click)="filteration(All)">All</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a #Following name="Following" class="nav-link" href="#" (click)="filteration(Following)">Following</a>
+    </li><li class="nav-item">
+      <a #Newest name="Newest" class="nav-link" href="#" (click)="filteration(Newest)">Newest</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a #populaur name = "populaur" class="nav-link" href="#" (click)="filteration(populaur)">populaur</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Disabled</a>
-    </li>
+   
   </ul>
+</div>
 
+  <div class="row row-cols-1 row-cols-md-2 g-4 ">
+    <div class="col" *ngFor="let item of showedCart">
+              <div class="card" >
+                  <img [src]="item.coverImg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title row">
+                      <img [src]="item.profileImg" class="rounded-circle col-2 " alt="Cinque Terre" >
+                      <div class="col-6 ">
+                          <p>{{item.name}}</p>
+                      </div>
+                      <div class="col-2 ">
+                        <p><i class="fa-solid fa-heart"></i>{{item.loveNumber}}</p>
+                  </div><div class="col-2">
+                    <p><i class="fa-solid fa-comment-dots"></i>{{item.comment}}</p>
+                    </div>
+                    </h3>
+                  </div>
+              </div>
+    </div>
+
+  </div>
+    </section>

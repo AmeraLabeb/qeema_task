@@ -8,6 +8,9 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { StoriesComponent } from './Components/stories/stories.component';
 import { FeedsComponent } from './Components/feeds/feeds.component';
 import  HighLightDirective  from './Directives/high-light.directive';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import  HighLightDirective  from './Directives/high-light.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

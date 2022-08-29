@@ -49,8 +49,20 @@ li a {
     padding-bottom: 10px;
 
     svg {
-    color : #bb00ff
+    color : rgb(92, 92, 92)
     
 
 }}
+.reouter_active {
+    box-shadow: 1px 1px 6px #6e6e6eb3;
+    border: none;
+}
 
+.reouter_active a{
+ color :black
+}
+
+.reouter_active svg{
+    color: #bb00ff !important;
+    background-color: white
+}
