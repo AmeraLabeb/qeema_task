@@ -1,78 +1,81 @@
-.container{
-    border-top-left-radius: 20px; 
+.container {
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    height: 90vh !important;
+    height: 98vh !important;
     margin-top: 1vh !important;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.274);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.041);
 }
 
-li{
-    margin-bottom:30px ;
-    font-size: 15px;
-    font-weight: bold;
-    
-}
-li a {
-    text-decoration: none ;
-    
-}
-.logoImg {
+main {
     background-color: white;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.logo img{
+    padding: 10px;
     border-radius: 100%;
-    padding: 15px;
-    box-shadow: -2px 1px 6px #000000b3;
-    margin-bottom: 40px;
-    margin-top: 12px;
-    margin-left: 10px;
-    font-size: 50%;
-}
-
-.logoImg img {
-       width:70%;
-       margin-left:12px;
-
-    }
-
-
-
-.logoName p {
-        padding-top: 50px ;
-        color: #bb00ff;
-        font-weight: bold ;
-        font-size:x-large;
-         
+    box-shadow: -6px 4px 8px #c4ccfdb3;
 
 }
 
+.logo-name{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 
+.logo-name p{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: #bb00ff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.logo-name p span{
+    text-decoration: underline
+}
 
-.logoName span {
-            text-decoration: underline
+li {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
+
 }
 
 .nav-item {
-    padding-bottom: 10px;
-padding-left: 8px;
-    svg {
-    color : rgb(92, 92, 92)
-    
+    padding: 8px 10px;
 
-}}
-.reouter_active {
-    box-shadow: 1px 1px 6px #6e6e6eb3;
-   
+    svg {
+        color: rgb(92, 92, 92)
+    }
+}
+
+.router_active {
+    box-shadow: 1px 1px 6px #6e6e6e37;
+
     border: none;
 }
 
-.reouter_active a{
- color :black;
- font-size: 18px;
- 
+.router_active a {
+    color: black;
+    font-size: 1rem;
+
 }
 
-.reouter_active svg{
+.router_active svg {
     color: #bb00ff !important;
 }
- .m{
-   font-size: 20px;
- }
+
+.menu {
+    font-size: 1.25rem;
+}

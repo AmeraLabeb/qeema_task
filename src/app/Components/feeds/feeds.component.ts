@@ -27,7 +27,7 @@ export class FeedsComponent implements OnInit {
         if(x.name ==="Newest"){
           this.showedCart = [ this.card[this.card.length-1] ]
         }
-        if(x.name ==="populaur"){
+        if(x.name ==="Popular"){
           this.showedCart = this.card
           for(let i=0 ; i<this.showedCart.length ; i++){
                for(let j=i+1 ; j<this.showedCart.length ; j++){

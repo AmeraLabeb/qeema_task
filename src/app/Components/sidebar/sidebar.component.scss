@@ -20,6 +20,17 @@ img{
     border-radius: 100%;
 }
 
+.suggestion h4{
+    font-weight: bold;
+
+}
+.suggestion span{
+    margin-right: 20px;
+    font-weight: bold;
+    color: #bb00ff;
+
+}
+
 p{
     margin: 0;
 }
@@ -69,11 +80,4 @@ margin: 0;
 .buttons svg{
     padding: 8px;
 
-}
-.see{
-    color: #b0f;
-    font-size: 20px;
-}
-.sugg{
-    font-size: 20px;
 }

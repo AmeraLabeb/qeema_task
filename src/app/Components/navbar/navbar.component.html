@@ -1,38 +1,41 @@
-<div class="bg-light m-lg-3 p-lg-3 container ">
-<div class="row">
-    <div class="col-5 logoImg ">
-      <img src="assets/c1.jpg"/>
-    </div>
-    <div class="col-7 row logoName">
-        <p>C<span>o</span>feed</p>
-    </div>
-</div>
+<main class="p-lg-3 container ">
+  <!-- Logo Start-->
+  <div class="logo">
+    <img class="col-4" src="assets/c1.jpg" />
 
-<ul class="navbar-nav ms-auto">
-  <li class="m">Menu</li>
-    <li class="nav-item"  routerLinkActive="reouter_active">
-        <i class="fa-solid fa-house "></i>
-        <a class="p-lg-3" routerLink="/home"> Home</a>
+    <div class="col-8 logo-name">
+      <p>C<span>o</span>feed</p>
+    </div>
+  </div>
+  <!-- Logo End-->
+
+
+  <!-- Links Start-->
+  <ul class="navbar-nav ms-auto">
+    <li class="menu">Menu</li>
+    <li class="nav-item" routerLinkActive="router_active">
+      <i class="fa-solid fa-house "></i>
+      <a class="p-lg-3" routerLink="/home"> Home</a>
     </li>
-    <li class="nav-item" routerLinkActive="reouter_active">
+    <li class="nav-item" routerLinkActive="router_active">
       <i class="fa-regular fa-comment-dots"></i>
       <a class="p-lg-3" routerLink="/message"> Messages</a>
-  </li>
-    <li class="nav-item" routerLinkActive="reouter_active">
+    </li>
+    <li class="nav-item" routerLinkActive="router_active">
       <i class="fa-regular fa-user"></i>
       <a class="p-lg-3" routerLink="/profile"> Profile</a>
     </li>
 
-  <li class="nav-item" routerLinkActive="reouter_active">
-    <i class="fa-regular fa-bookmark"></i>
-    <a class="p-lg-3" routerLink="/savepost"> Save Post</a>
-</li>
-<li class="nav-item"  routerLinkActive="reouter_active"> 
-  <i class="fa-regular fa-bars"></i>     
-  <a class="p-lg-3" routerLink="/settings">Settings</a>
-</li>
+    <li class="nav-item" routerLinkActive="router_active">
+      <i class="fa-regular fa-bookmark"></i>
+      <a class="p-lg-3" routerLink="/savepost"> Save Post</a>
+    </li>
+    <li class="nav-item" routerLinkActive="router_active">
+      <i class="fa-regular fa-bars"></i>
+      <a class="p-lg-3" routerLink="/settings">Settings</a>
+    </li>
 
-
-    
   </ul>
-</div>
+  <!-- Links End-->
+
+</main>

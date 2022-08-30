@@ -1,23 +1,14 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-sm-auto">
-            <!-- <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
-            <a class="nav-link" href="#"><img src="assets/1.webp" class="rounded-circle" alt="Cinque Terre" width="85" height="85"><p>you</p></a>
- -->
-
- <div *ngFor="let item of stories" class="p-lg-2">
-       <a class="nav-link" href="#"><img HighLight [defaultColor]="defaultColor" [color]="color" [src]="item.img" class="rounded-circle" alt={{item.name}} width="100" height="100"><p>{{item.name}}</p></a>
-      </div>
-
-
-        </div>
-      </div>
+<main>
+  
+  <div class="stories d-flex">
+    <div *ngFor="let item of stories" class="stories-content p-2">
+      <!-- photo -->
+      <a href="#"><img HighLight [defaultColor]="defaultColor" [color]="color" [src]="item.img" class="rounded-circle"
+          alt={{item.name}} width="80" height="80">
+          <!-- name -->
+        <p class="stories-name">{{item.name}}</p>
+      </a>
     </div>
-  </nav> 
-  <hr>
+  </div>
+</main>
+<hr>
