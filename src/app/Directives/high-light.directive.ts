@@ -5,7 +5,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export default class HighLightDirective {
   defaultBackground:string = "#b0f" ; 
-  clickedBachground:string = "#fff"
+  clickedBackground:string = "#fff"
   
 @Input() defaultColor:string ="#b0f";
 @Input() color:string = "white";
@@ -24,15 +24,11 @@ export default class HighLightDirective {
   this.elemRef.nativeElement.style.background=`${this.color}`;
 
   if(this.elemRef.nativeElement.type == 'button'){
-    this.elemRef.nativeElement.style.background = this.clickedBachground;
+    this.elemRef.nativeElement.style.background = this.clickedBackground;
     this.elemRef.nativeElement.style.border=`1px solid rgb(147 140 151)`;
     this.elemRef.nativeElement.style.color = 'rgb(147 140 151)'
 }
 
 }
-// @HostListener('mouseout')  onMouseOut()
-// {
-//   //this.elemRef.nativeElement.style.border=`4px solid ${this.color}`;
-//   this.elemRef.nativeElement.style.border=`4px solid ${this.defaultColor}`;
-// }
 }
+

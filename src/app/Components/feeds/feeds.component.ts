@@ -16,25 +16,25 @@ export class FeedsComponent implements OnInit {
       this.showedCart = item;
     });
   }
-  filteration(x:any){
-        //  console.log(x.name)
-         if(x.name ==="Following"){
+  filteration(filterBy:any){
+        //  console.log(filterBy.name)
+         if(filterBy.name ==="Following"){
           this.showedCart = this.card.filter(item=>item.followed == true)
         }
-        if(x.name ==="All"){
+        if(filterBy.name ==="All"){
           this.showedCart = this.card.filter(item=>  item)
         }
-        if(x.name ==="Newest"){
+        if(filterBy.name ==="Newest"){
           this.showedCart = [ this.card[this.card.length-1] ]
         }
-        if(x.name ==="Popular"){
+        if(filterBy.name ==="Popular"){
           this.showedCart = this.card
           for(let i=0 ; i<this.showedCart.length ; i++){
                for(let j=i+1 ; j<this.showedCart.length ; j++){
                     if(this.showedCart[i].loveNumber <this.showedCart[j].loveNumber){
-                        let x = this.showedCart[i] ; 
+                        let filterBy = this.showedCart[i] ; 
                         this.showedCart[i] = this.showedCart[j];
-                        this.showedCart[j] = x ;
+                        this.showedCart[j] = filterBy ;
                     }
                }
           }
